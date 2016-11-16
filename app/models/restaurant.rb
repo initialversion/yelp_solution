@@ -1,4 +1,6 @@
 class Restaurant < ApplicationRecord
+  mount_uploader :cover_image, CoverImageUploader
+
   # Direct associations
 
   has_many   :taggings,
